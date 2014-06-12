@@ -1,6 +1,4 @@
 Blog::Application.routes.draw do
-  resources :delete_id_bookings
-
   resources :bookings
 
   resources :flights
