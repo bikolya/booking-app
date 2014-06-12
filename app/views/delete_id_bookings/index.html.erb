@@ -1,0 +1,31 @@
+<h1>Listing delete_id_bookings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Flight</th>
+      <th>Hotel</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @delete_id_bookings.each do |delete_id_booking| %>
+      <tr>
+        <td><%= delete_id_booking.country_id %></td>
+        <td><%= delete_id_booking.flight_id %></td>
+        <td><%= delete_id_booking.hotel_id %></td>
+        <td><%= link_to 'Show', delete_id_booking %></td>
+        <td><%= link_to 'Edit', edit_delete_id_booking_path(delete_id_booking) %></td>
+        <td><%= link_to 'Destroy', delete_id_booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Delete id booking', new_delete_id_booking_path %>

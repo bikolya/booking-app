@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140612130137) do
+ActiveRecord::Schema.define(version: 20140612144712) do
 
-  create_table "bookings", force: true do |t|
+  create_table "bookings", id: false, force: true do |t|
     t.integer  "country_id"
     t.integer  "flight_id"
     t.integer  "hotel_id"

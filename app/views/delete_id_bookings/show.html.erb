@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @delete_id_booking.country_id %>
+</p>
+
+<p>
+  <strong>Flight:</strong>
+  <%= @delete_id_booking.flight_id %>
+</p>
+
+<p>
+  <strong>Hotel:</strong>
+  <%= @delete_id_booking.hotel_id %>
+</p>
+
+<%= link_to 'Edit', edit_delete_id_booking_path(@delete_id_booking) %> |
+<%= link_to 'Back', delete_id_bookings_path %>
